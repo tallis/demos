@@ -1,3 +1,24 @@
 <div class="title">
     <%= title %>
 </div>
+<div>
+    <h1><span id="connected_users"></span> Connected People <span style="font-size:7pt">could totally make a Nokia pun here</span></h1>
+    <ul id="connected_devices">
+    </ul>
+</div>
+    
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>   
+    
+<script>
+    var socket = io.connect('http://localhost:3000');
+    socket.on('connect', function(data) {
+        socket.on('stats', function(data) {
+            $("#connected_users").html(data.connected_users);
+            $("#connected_devices").html("");
+            for(var i = 0; i< data.connected_devices.length; i++){
+                $("#connected_devices").append('<li>'+data.connected_devices[i]+'</li>')
+            }
+        });
+    });
+</script>
