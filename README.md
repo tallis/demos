@@ -9,4 +9,6 @@ Feel free to use the code and provide comments and requests-for-enhancements as 
 * Slide deck  (soon)
 
 * [Demo #2 - Simple API using Express.js, EJS and Redis](https://github.com/tallis/techaway/tree/nodejs_complete).
+* [Demo #3 - WebSockets using Express.js, EJS and Socket.io](https://github.com/tallis/techaway/tree/socketio_complete).
+
 
