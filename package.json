@@ -1,0 +1,36 @@
+{
+  "name": "techaway_nodejs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "fs": "~0.0.2",
+    "morgan": "~1.6.1",
+    "redis": "~0.12.1"
+  },
+  "description": "Veniam Tech-Away live demo | Node.js from web to webverywhere",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tallis/techaway"
+  },
+  "keywords": [
+    "node.js",
+    "express.js"
+  ],
+  "author": "Rui Costa",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tallis/techaway/issues"
+  },
+  "homepage": "https://github.com/tallis/techaway"
+}
+
